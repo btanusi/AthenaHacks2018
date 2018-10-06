@@ -1,0 +1,45 @@
+body {
+  margin: 100;
+  font-family: 'Raleway';
+  font-size: 28px;
+  text-align:center;
+ 
+}
+p {
+  font-size:18px;
+  line-height:150%
+}
+
+.wrap {
+    width: 100%;
+}
+
+.floatleft {
+    float:left; 
+    width: 40%;
+    background-color: #39CCCC;
+    height: 600px;
+}
+
+.floatright {
+float: right;
+    background-color: #7FDBFF;
+    height: 600px;
+    width: 60%;
+}
+
+.btn {
+    background-color:#7FDBFF ; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: #39CCCC;
+}
+
+

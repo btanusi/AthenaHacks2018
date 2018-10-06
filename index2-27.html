@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>basic.html</title>
+<meta charset = “UTF-8” />
+<link rel="stylesheet" type="text/css" href="style2-27.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet">
+
+    <script src="//cdn.jsdelivr.net/phaser/2.5.0/phaser.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js2-27.js"></script>
+<script>
+        $(document).ready(function(){
+        $(".Q2").hide();
+        $(".Q3").hide();
+        $(".Q4").hide();
+        $(".IncorrectPage").hide();
+        $("#correct1").click(function(){
+            $(".IncorrectPage").hide();
+            $(".Q1").hide();
+            $(".Q2").show();
+            makeQ2();
+        });
+        $(".incorrect1").click(function(){
+            $(".Q1").hide();
+            $(".IncorrectPage").show();
+            $(".btn").click(function(){
+                $(".Q1").show();
+                $(".IncorrectPage").hide();
+            });
+        });
+        $("#correct2").click(function(){
+            $(".Q1").hide();
+            $(".Q2").hide();
+            $(".Q3").show();
+        });
+        $(".incorrect2").click(function(){
+            $(".Q2").hide();
+            $(".IncorrectPage").show();
+            $(".btn").click(function(){
+                $(".Q2").show();
+                $(".IncorrectPage").hide();
+            });
+        });
+    });
+</script>
+</head>
+
+<body>
+<div class="wrap">
+    <div id = "phaser"></div>
+    <div class="floatleft Q1"></div>
+    <div class="floatright Q1"></div>
+    <div style="clear: both;">
+</div>
+
+<h2 class="Q1">  
+    <span style="color: #B10DC9"> If </span> <span style="color: #F012BE"> (Robot Ruby is interested in engineering)</span>;<br/> {she will go on an adventure} <br/>  <span style="color: #B10DC9"> else </span> {she will be sad and stay home} 
+</h2>
+<h4 class="Q1"> 
+    Based on this <span style="color: #F012BE"> Boolean</span>, what will Ruby choose to do? 
+</h4>
+<p class="Q1" id= "correct1"> 
+    <button class="btn">She will go on an intergalactic adventure!</button>
+</p>
+<p class="Q1 incorrect1"> 
+    <button class="btn">She will be sad and stay home :( </button>
+</p>
+
+
+<h2 class="Q2"> 
+    Rocket Launch
+</h2>
+<h4 class= "Q2"> 
+    Rocket Ruby decides she wants to visit moon, but first, she needs to help the aerospace engineers calculate the angle of her launch. Where should she aim the rocket? 
+</h4>
+<p class="Q2 incorrect2">
+    <button class="btn">In a straight line at the moon</button>
+</p>
+<p class="Q2" id= "correct2"> 
+    <button class="btn">In a straight line above the moon</button>
+</p>
+<p class="Q2 incorrect2">  
+    <button class="btn">In a straight line below the moon</button>
+</p>
+
+<h2 class="Q3"> Question3</h2>
+<p class="Q3"> Answer1</p>
+<p class="Q3"> Answer2</p>
+<p class="Q3"> Answer3</p>
+
+<h2 class="Q4"> Question4</h2>
+<p class="Q4"> Answer1</p>
+<p class="Q4"> Answer2</p>
+<p class="Q4"> Answer3</p>
+
+<h2 class="IncorrectPage"> Incorrect! Please try again! </h2>
+<p>
+    <button class="btn IncorrectPage">Back to Question</button>
+</p>
+
+
+</body>
+</html>
